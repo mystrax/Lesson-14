@@ -45,3 +45,29 @@ reverse
             cout << num << " ";
         }
     }
+
+1000 numbers within 1-100
+
+    #include <iostream>
+    #include <array>
+    #include <algorithm>
+    using namespace std;
+    int main()
+    {
+        int randomArry[1000];
+        int j = 0;
+        for (int i = 0;i < 1000;i++)
+        {
+            randomArry[i] = rand() % 100;
+            cout << randomArry[i] << endl;
+            if (randomArry[i] == 6) {
+                cout << randomArry[i] << endl;
+                j++;
+            }
+            else 
+            {
+                continue;
+            }
+        }
+        cout << " Number 6 showed up: " << j << endl;
+    }
