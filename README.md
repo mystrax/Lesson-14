@@ -98,3 +98,52 @@ reverse
         }
         cout << " Number 6 showed up: " << j << endl;
     }
+
+largest
+
+    #include <iostream>
+    #include <array>
+    using namespace std;
+    int main() 
+    {
+        int User[10];
+        int i;
+        int max = User[0];
+        for (i = 0; i < 10; i++)
+       {
+            cin >> User[i];
+            if (User[i] > max) 
+            {
+                max = User[i];
+            }
+        }
+        cout << "Largest Number inserted: " << max;
+        return 0;
+    }
+    
+Smallest
+
+    #include <iostream>
+    #include <array>
+    using namespace std;
+    int main()
+    {
+
+        int User[10];
+        int i;
+        int max;
+        for (i = 0; i < 10; i++) 
+        {
+            cin >> User[i];
+            max = User[0];
+        }
+        for (i = 0; i < 10; i++)
+        {
+            if (User[i] < max) 
+            {
+                max = User[i];
+            }
+        }
+        cout << "smallest Number inserted: " << max;
+        return 0;
+    }
