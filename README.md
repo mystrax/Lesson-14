@@ -1,20 +1,47 @@
 # Lesson-14
 
+random
+
     #include <iostream>
+    #include <string>
+    #include <algorithm>
+    #include <exception>
     #include <array>
+    #include <random>
     using namespace std;
+
     int main()
     {
-        array <string, 4> arr = {"Mars Bar", "Snickers", "Bounty", "Wispa"};
-        cout << arr.at(1) << endl;
-        cout << arr[1] << endl;
-        cout << arr.front() << endl;
-        cout << arr.back() << endl;
-        for (int i = 0;i < arr.size();i++) {
-            cout << arr.at(i) << ", ";
-        }
-        cout << endl;
+        //include srand to make the random generated numbers different, 
+    //if you want differenet output each time, each the seed or you can also use the % logic
+        srand(7);
+        array<int,10> randomArry;
+        for (int i = 0; i < 10; i++)
+        {
+            randomArry[i] = rand();
+            cout << randomArry[i] << endl;
+            }
+
     }
+  
+  
+  
+
+      #include <iostream>
+        #include <array>
+        using namespace std;
+        int main()
+        {
+            array <string, 4> arr = {"Mars Bar", "Snickers", "Bounty", "Wispa"};
+            cout << arr.at(1) << endl;
+            cout << arr[1] << endl;
+            cout << arr.front() << endl;
+            cout << arr.back() << endl;
+            for (int i = 0;i < arr.size();i++) {
+                cout << arr.at(i) << ", ";
+            }
+            cout << endl;
+        }
 
 sort
 
